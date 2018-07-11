@@ -102,6 +102,7 @@
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.5.7.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RicardoDealCommunity\RicardoDealCommunity.csproj">
@@ -124,9 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Views\MainView.xib" />
     <InterfaceDefinition Include="Views\Tabs\Deals\DealsView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Profile\ProfileView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -136,17 +137,19 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\MainView.designer.cs" />
     <Compile Include="Views\MainView.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Views\Tabs\Deals\DealsView.cs" />
-    <Compile Include="Views\Tabs\Deals\DealsView.designer.cs" />
+    <Compile Include="Views\Tabs\Deals\DealsView.designer.cs">
+      <DependentUpon>DealsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tabs\Profile\ProfileView.cs" />
+    <Compile Include="Views\Tabs\Profile\ProfileView.designer.cs">
+      <DependentUpon>ProfileView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icones\ic_profile\ic_profile.png" />

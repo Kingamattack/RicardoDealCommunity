@@ -7,21 +7,15 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
-namespace RicardoDealCommunity.iOS
+namespace RicardoDealCommunity.iOS.Views.Tabs.Profile
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("ProfileView")]
+    partial class ProfileView
     {
-        [Outlet]
-        UIKit.UIButton Button { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (Button != null) {
-                Button.Dispose ();
-                Button = null;
-            }
         }
     }
 }
