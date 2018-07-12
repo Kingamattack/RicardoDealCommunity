@@ -1,13 +1,7 @@
-﻿// File: AppDelegate.cs
-// Author: Kingamattack
-// Date: 12/7/2018
-
-using MvvmCross.Core.ViewModels;
+﻿using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.Platform;
-
 using Foundation;
-
 using UIKit;
 
 namespace RicardoDealCommunity.iOS

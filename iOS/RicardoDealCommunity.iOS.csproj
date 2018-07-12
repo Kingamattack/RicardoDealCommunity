@@ -122,12 +122,16 @@
     <Folder Include="Views\Tabs\" />
     <Folder Include="Views\Tabs\Deals\" />
     <Folder Include="Views\Tabs\Profile\" />
+    <Folder Include="Views\Details\" />
+    <Folder Include="Views\NewDeal\" />
+    <Folder Include="Views\Search\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Views\Tabs\Deals\DealsView.xib" />
     <InterfaceDefinition Include="Views\Tabs\Profile\ProfileView.xib" />
     <InterfaceDefinition Include="Views\Tabs\Deals\DealCell.xib" />
+    <InterfaceDefinition Include="Views\Details\DetailsView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -151,6 +155,10 @@
     <Compile Include="Views\Tabs\Deals\DealCell.cs" />
     <Compile Include="Views\Tabs\Deals\DealCell.designer.cs">
       <DependentUpon>DealCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Details\DetailsView.cs" />
+    <Compile Include="Views\Details\DetailsView.designer.cs">
+      <DependentUpon>DetailsView.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

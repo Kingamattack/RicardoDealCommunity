@@ -15,6 +15,7 @@ namespace RicardoDealCommunity.Models
         public string City { get; set; }
         public double Price { get; set; }
         public int Owner { get; set; }
+        public int Mark { get; set; }
         public string Picture { get; set; }
         public string[] Comments { get; set; }
 
@@ -27,6 +28,7 @@ namespace RicardoDealCommunity.Models
             City = string.Empty;
             Price = default(double);
             Owner = 1;
+            Mark = 0;
             Picture = string.Empty;
         }
     }

@@ -1,3 +1,7 @@
+// File: AssemblyInfo.cs
+// Author: Kingamattack
+// Date: 12/7/2018
+
 using MvvmCross.Platform.IoC;
 
 namespace RicardoDealCommunity

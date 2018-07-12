@@ -26,7 +26,6 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
         {
             base.ViewDidLoad();
 
-            // TableViewSource settings
             var source = new DealsTableSource(DealsTableView);
             this.AddBindings(new Dictionary<object, string>
             {

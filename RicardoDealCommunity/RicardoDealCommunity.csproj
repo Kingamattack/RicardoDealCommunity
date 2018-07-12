@@ -33,11 +33,9 @@
     <Compile Include="Models\Deal.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\DealsViewModel.cs" />
+    <Compile Include="ViewModels\DetailsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MvvmCross.Platform">
-      <HintPath>..\packages\MvvmCross.Platform.5.7.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
-    </Reference>
     <Reference Include="MvvmCross.Core">
       <HintPath>..\packages\MvvmCross.Core.5.7.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
     </Reference>
@@ -46,6 +44,9 @@
     </Reference>
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.5.7.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\packages\MvvmCross.Platform.5.7.0\lib\portable-net45+win+wpa81+wp80 03-18-22-154\MvvmCross.Platform.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

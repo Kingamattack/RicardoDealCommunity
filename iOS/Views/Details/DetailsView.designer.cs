@@ -7,15 +7,16 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
-namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
+namespace RicardoDealCommunity.iOS.Views.Details
 {
-    [Register ("DealCell")]
-    partial class DealCell
+    [Register ("DetailsView")]
+    partial class DetailsView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel DateLabel { get; set; }
+        UIKit.UITextView DescriptionTextView { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -27,17 +28,17 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel PriceLabel { get; set; }
+        UIKit.UIImageView PictureImageView { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIImageView ThumbnailImageView { get; set; }
+        UIKit.UILabel PriceLabel { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (DateLabel != null) {
-                DateLabel.Dispose ();
-                DateLabel = null;
+            if (DescriptionTextView != null) {
+                DescriptionTextView.Dispose ();
+                DescriptionTextView = null;
             }
 
             if (NameLabel != null) {
@@ -50,14 +51,14 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
                 OwnerLabel = null;
             }
 
+            if (PictureImageView != null) {
+                PictureImageView.Dispose ();
+                PictureImageView = null;
+            }
+
             if (PriceLabel != null) {
                 PriceLabel.Dispose ();
                 PriceLabel = null;
-            }
-
-            if (ThumbnailImageView != null) {
-                ThumbnailImageView.Dispose ();
-                ThumbnailImageView = null;
             }
         }
     }
