@@ -13,7 +13,7 @@ namespace RicardoDealCommunity.Droid
 
         protected override IMvxApplication CreateApp()
         {
-            return new Core.App();
+            return new App();
         }
 
         protected override IMvxTrace CreateDebugTrace()

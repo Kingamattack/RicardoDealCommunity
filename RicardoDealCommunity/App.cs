@@ -11,8 +11,7 @@ namespace RicardoDealCommunity
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterNavigationServiceAppStart<ViewModels.MainViewModel>();
-            //RegisterAppStart<ViewModels.MainViewModel>();
+            RegisterNavigationServiceAppStart<ViewModels.DealsViewModel>();
         }
     }
 }

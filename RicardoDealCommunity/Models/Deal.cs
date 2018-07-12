@@ -20,6 +20,14 @@ namespace RicardoDealCommunity.Models
 
         public Deal()
         {
+            Id = default(int);
+            Name = string.Empty;
+            Description = string.Empty;
+            Date = DateTime.Now;
+            City = string.Empty;
+            Price = default(double);
+            Owner = 1;
+            Picture = string.Empty;
         }
     }
 }

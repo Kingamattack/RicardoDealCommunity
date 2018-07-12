@@ -125,9 +125,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Views\MainView.xib" />
     <InterfaceDefinition Include="Views\Tabs\Deals\DealsView.xib" />
     <InterfaceDefinition Include="Views\Tabs\Profile\ProfileView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Deals\DealCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -137,8 +137,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Views\MainView.designer.cs" />
-    <Compile Include="Views\MainView.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="DebugTrace.cs" />
@@ -149,6 +147,10 @@
     <Compile Include="Views\Tabs\Profile\ProfileView.cs" />
     <Compile Include="Views\Tabs\Profile\ProfileView.designer.cs">
       <DependentUpon>ProfileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tabs\Deals\DealCell.cs" />
+    <Compile Include="Views\Tabs\Deals\DealCell.designer.cs">
+      <DependentUpon>DealCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
