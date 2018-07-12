@@ -6,6 +6,7 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.iOS.Views;
 
 using RicardoDealCommunity.ViewModels;
+
 using UIKit;
 
 namespace RicardoDealCommunity.iOS.Views.Details

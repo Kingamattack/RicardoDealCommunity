@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 
 using RicardoDealCommunity.Models;
@@ -12,33 +13,19 @@ namespace RicardoDealCommunity.ViewModels
 {
     public class DealsViewModel : MvxViewModel
     {
-        public List<Deal> Deals { get; private set; }
+        readonly IMvxNavigationService _navigationService;
 
-        public DealsViewModel()
-        {
-            Deals = new List<Deal>
+        public List<Deal> Deals 
+        { 
+            get
             {
-                new Deal
-                {
-                    Name = "Yeah"
-                },
-                new Deal
-                {
-                    Name = "Yeah 2"
-                },
-                new Deal
-                {
-                    Name = "Yeah 3"
-                },
-                new Deal
-                {
-                    Name = "Yeah 4"
-                },
-                new Deal
-                {
-                    Name = "Yeah 5"
-                },
-            };
+                return new List<Deal> { new Deal { Name = "Deal 1" }, new Deal { Name = "Deal 2" }, new Deal { Name = "Deal 3" } };
+            } 
+        }
+
+        public DealsViewModel(IMvxNavigationService navigationService)
+        {
+            _navigationService = navigationService;
         }
     }
 }

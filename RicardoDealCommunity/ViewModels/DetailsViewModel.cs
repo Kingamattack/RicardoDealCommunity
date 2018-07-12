@@ -2,16 +2,19 @@
 // Author: Kingamattack
 // Date: 13/7/2018
 
-using System;
-
 using MvvmCross.Core.ViewModels;
 
 using RicardoDealCommunity.Models;
 
 namespace RicardoDealCommunity.ViewModels
 {
-    public class DetailsViewModel : MvxViewModel
+    public class DetailsViewModel : MvxViewModel<Deal>
     {
         public Deal CurrentDeal { get; set; }
+
+        public override void Prepare(Deal parameter)
+        {
+            CurrentDeal = parameter;
+        }
     }
 }

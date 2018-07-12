@@ -18,18 +18,5 @@ namespace RicardoDealCommunity.Models
         public int Mark { get; set; }
         public string Picture { get; set; }
         public string[] Comments { get; set; }
-
-        public Deal()
-        {
-            Id = default(int);
-            Name = string.Empty;
-            Description = string.Empty;
-            Date = DateTime.Now;
-            City = string.Empty;
-            Price = default(double);
-            Owner = 1;
-            Mark = 0;
-            Picture = string.Empty;
-        }
     }
 }
