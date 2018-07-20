@@ -8,14 +8,22 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 
-namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
+namespace RicardoDealCommunity.iOS.Views.Tabs.List
 {
     [Register ("DealCell")]
     partial class DealCell
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel CityLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel DateLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel GradeLabel { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -35,9 +43,19 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
 
         void ReleaseDesignerOutlets ()
         {
+            if (CityLabel != null) {
+                CityLabel.Dispose ();
+                CityLabel = null;
+            }
+
             if (DateLabel != null) {
                 DateLabel.Dispose ();
                 DateLabel = null;
+            }
+
+            if (GradeLabel != null) {
+                GradeLabel.Dispose ();
+                GradeLabel = null;
             }
 
             if (NameLabel != null) {

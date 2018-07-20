@@ -120,54 +120,67 @@
     <Folder Include="Resources\Icones\ic_deals\" />
     <Folder Include="Resources\Icones\ic_profile\" />
     <Folder Include="Views\Tabs\" />
-    <Folder Include="Views\Tabs\Deals\" />
+    <Folder Include="Views\Tabs\List\" />
     <Folder Include="Views\Tabs\Profile\" />
     <Folder Include="Views\Details\" />
-    <Folder Include="Views\NewDeal\" />
-    <Folder Include="Views\Search\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Views\Tabs\Deals\DealsView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\List\ListView.xib" />
     <InterfaceDefinition Include="Views\Tabs\Profile\ProfileView.xib" />
-    <InterfaceDefinition Include="Views\Tabs\Deals\DealCell.xib" />
+    <InterfaceDefinition Include="Views\Tabs\List\DealCell.xib" />
     <InterfaceDefinition Include="Views\Details\DetailsView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\HomeView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\ChildView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
+    <None Include="Resources\Images\esquive.png" />
+    <None Include="Resources\Images\goku.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
-    <Compile Include="DebugTrace.cs" />
-    <Compile Include="Views\Tabs\Deals\DealsView.cs" />
-    <Compile Include="Views\Tabs\Deals\DealsView.designer.cs">
-      <DependentUpon>DealsView.cs</DependentUpon>
+    <Compile Include="Views\Tabs\List\ListView.cs" />
+    <Compile Include="Views\Tabs\List\ListView.designer.cs">
+      <DependentUpon>ListView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Tabs\Profile\ProfileView.cs" />
     <Compile Include="Views\Tabs\Profile\ProfileView.designer.cs">
       <DependentUpon>ProfileView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Tabs\Deals\DealCell.cs" />
-    <Compile Include="Views\Tabs\Deals\DealCell.designer.cs">
+    <Compile Include="Views\Tabs\List\DealCell.cs" />
+    <Compile Include="Views\Tabs\List\DealCell.designer.cs">
       <DependentUpon>DealCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Details\DetailsView.cs" />
     <Compile Include="Views\Details\DetailsView.designer.cs">
       <DependentUpon>DetailsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tabs\HomeView.cs" />
+    <Compile Include="Views\Tabs\HomeView.designer.cs">
+      <DependentUpon>HomeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tabs\ChildView.cs" />
+    <Compile Include="Views\Tabs\ChildView.designer.cs">
+      <DependentUpon>ChildView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icones\ic_profile\ic_profile.png" />
     <BundleResource Include="Resources\Icones\ic_profile\ic_profile%402x.png" />
     <BundleResource Include="Resources\Icones\ic_profile\ic_profile%403x.png" />
-    <BundleResource Include="Resources\Icones\ic_deals\ic_home.png" />
-    <BundleResource Include="Resources\Icones\ic_deals\ic_home%402x.png" />
-    <BundleResource Include="Resources\Icones\ic_deals\ic_home%403x.png" />
+    <BundleResource Include="Resources\Icones\ic_deals\ic_deals.png" />
+    <BundleResource Include="Resources\Icones\ic_deals\ic_deals%402x.png" />
+    <BundleResource Include="Resources\Icones\ic_deals\ic_deals%403x.png" />
+    <BundleResource Include="Images\home.png" />
+    <BundleResource Include="Images\twitter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

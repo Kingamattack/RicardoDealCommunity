@@ -10,11 +10,11 @@ namespace RicardoDealCommunity.ViewModels
 {
     public class DetailsViewModel : MvxViewModel<Deal>
     {
-        public Deal CurrentDeal { get; set; }
+        public Deal SelectedDeal { get; set; }
 
         public override void Prepare(Deal parameter)
         {
-            CurrentDeal = parameter;
+            SelectedDeal = parameter;
         }
     }
 }

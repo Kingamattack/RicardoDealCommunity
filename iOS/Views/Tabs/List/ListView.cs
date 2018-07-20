@@ -14,11 +14,11 @@ using UIKit;
 
 using System.Collections.Generic;
 
-namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
+namespace RicardoDealCommunity.iOS.Views.Tabs.List
 {
-    public partial class DealsView : MvxViewController<DealsViewModel>
+    public partial class ListView : MvxViewController<ListViewModel>
     {
-        public DealsView() : base(nameof(DealsView), null)
+        public ListView() : base(nameof(ListView), null)
         {
         }
 
@@ -26,23 +26,26 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
         {
             base.ViewDidLoad();
 
-            var source = new DealsTableSource(DealsTableView);
+            var source = new ListTableSource(ListTableView);
             this.AddBindings(new Dictionary<object, string>
             {
                 { source, "ItemsSource Deals" }
             });
 
-            DealsTableView.Source = source;
-            DealsTableView.RowHeight = 100f;
-            DealsTableView.ReloadData();
+            this.CreateBinding(source).For(s => s.SelectedItem).To<ListViewModel>(vm => vm.Item).Apply();
+            this.CreateBinding(source).For(s => s.SelectionChangedCommand).To<ListViewModel>(vm => vm.SelectItemCommand).Apply();
+
+            ListTableView.Source = source;
+            ListTableView.RowHeight = 100f;
+            ListTableView.ReloadData();
         }
     }
 
-    public class DealsTableSource : MvxTableViewSource
+    public class ListTableSource : MvxTableViewSource
     {
         static readonly NSString DealCellIdentifier = new NSString("DealCell");
 
-        public DealsTableSource(UITableView tableView) : base(tableView)
+        public ListTableSource(UITableView tableView) : base(tableView)
         {
             tableView.RegisterNibForCellReuse(UINib.FromName("DealCell", NSBundle.MainBundle), DealCellIdentifier);
         }

@@ -22,10 +22,5 @@ namespace RicardoDealCommunity.iOS
         {
             return new App();
         }
-        
-        protected override IMvxTrace CreateDebugTrace()
-        {
-            return new DebugTrace();
-        }
     }
 }

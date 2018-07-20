@@ -4,10 +4,15 @@
 
 namespace RicardoDealCommunity.Models
 {
-    public static class User
+    public class User
     {
-        public static string Username => "Kingamattack";
+        public string Username { get; set; }
 
-        public static int Id => 10;
+        public int Id { get; set; } = 10;
+
+        public User()
+        {
+            Username = "Kingamattack";
+        }
     }
 }

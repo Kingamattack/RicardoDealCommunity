@@ -1,15 +1,15 @@
 ﻿// File: ProfileView.cs
 // Author: Kingamattack
 // Date: 12/7/2018
-using System;
 
-using UIKit;
+using MvvmCross.iOS.Views;
+using RicardoDealCommunity.ViewModels;
 
 namespace RicardoDealCommunity.iOS.Views.Tabs.Profile
 {
-    public partial class ProfileView : UIViewController
+    public partial class ProfileView : MvxViewController<ProfileViewModel>
     {
-        public ProfileView() : base("ProfileView", null)
+        public ProfileView() : base(nameof(ProfileView), null)
         {
         }
 
@@ -26,4 +26,3 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Profile
         }
     }
 }
-

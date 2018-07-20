@@ -3,11 +3,10 @@
 // Date: 13/7/2018
 
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Binding.iOS.Views;
 using MvvmCross.iOS.Views;
 
 using RicardoDealCommunity.ViewModels;
-
-using UIKit;
 
 namespace RicardoDealCommunity.iOS.Views.Details
 {
@@ -22,10 +21,11 @@ namespace RicardoDealCommunity.iOS.Views.Details
             base.ViewDidLoad();
 
             var set = this.CreateBindingSet<DetailsView, DetailsViewModel>();
-            set.Bind(PictureImageView).For(imageView => imageView.Image).To(detailsViewModel => new UIImage(detailsViewModel.CurrentDeal.Picture));
-            set.Bind(NameLabel).To(detailsViewModel => detailsViewModel.CurrentDeal.Name);
-            set.Bind(PriceLabel).To(detailsViewModel => detailsViewModel.CurrentDeal.Price);
-            set.Bind(OwnerLabel).To(detailsViewModel => detailsViewModel.CurrentDeal.Owner);
+            set.Bind(NameLabel).To(vm => vm.SelectedDeal.Name);
+            set.Bind(PriceLabel).To(vm => vm.SelectedDeal.Price);
+            set.Bind(CityLabel).To(vm => vm.SelectedDeal.City);
+            set.Bind(OwnerLabel).To(vm => vm.SelectedDeal.Owner);
+
             set.Apply();
         }
     }

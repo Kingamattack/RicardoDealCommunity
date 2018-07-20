@@ -8,15 +8,13 @@ namespace RicardoDealCommunity.Models
 {
     public class Deal
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime Date { get; set; }
         public string City { get; set; }
         public double Price { get; set; }
-        public int Owner { get; set; }
-        public int Mark { get; set; }
+        public string Owner { get; set; }
+        public int Grade { get; set; }
         public string Picture { get; set; }
-        public string[] Comments { get; set; }
     }
 }

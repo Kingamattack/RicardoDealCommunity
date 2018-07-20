@@ -3,6 +3,7 @@
 // Date: 12/7/2018
 
 using MvvmCross.Platform.IoC;
+using RicardoDealCommunity.ViewModels;
 
 namespace RicardoDealCommunity
 {
@@ -15,7 +16,7 @@ namespace RicardoDealCommunity
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterNavigationServiceAppStart<ViewModels.DealsViewModel>();
+            RegisterNavigationServiceAppStart<HomeViewModel>();
         }
     }
 }

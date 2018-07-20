@@ -9,20 +9,20 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace RicardoDealCommunity.iOS.Views.Tabs.Deals
+namespace RicardoDealCommunity.iOS.Views.Tabs.List
 {
-    [Register ("DealsView")]
-    partial class DealsView
+    [Register ("ListView")]
+    partial class ListView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView DealsTableView { get; set; }
+        UIKit.UITableView ListTableView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (DealsTableView != null) {
-                DealsTableView.Dispose ();
-                DealsTableView = null;
+            if (ListTableView != null) {
+                ListTableView.Dispose ();
+                ListTableView = null;
             }
         }
     }

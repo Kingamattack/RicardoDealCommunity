@@ -16,6 +16,10 @@ namespace RicardoDealCommunity.iOS.Views.Details
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel CityLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextView DescriptionTextView { get; set; }
 
         [Outlet]
@@ -36,6 +40,11 @@ namespace RicardoDealCommunity.iOS.Views.Details
 
         void ReleaseDesignerOutlets ()
         {
+            if (CityLabel != null) {
+                CityLabel.Dispose ();
+                CityLabel = null;
+            }
+
             if (DescriptionTextView != null) {
                 DescriptionTextView.Dispose ();
                 DescriptionTextView = null;

@@ -32,10 +32,12 @@
     <Compile Include="App.cs" />
     <Compile Include="Models\Deal.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="ViewModels\DealsViewModel.cs" />
+    <Compile Include="ViewModels\ListViewModel.cs" />
     <Compile Include="ViewModels\DetailsViewModel.cs" />
-    <Compile Include="Interfaces\IRicardoDealCommunity.cs" />
-    <Compile Include="Services\LocalService.cs" />
+    <Compile Include="Services\LocalData.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\ChildViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Core">
