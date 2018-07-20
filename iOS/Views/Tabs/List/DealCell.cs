@@ -35,7 +35,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
                 this.CreateBinding(NameLabel).To<Deal>(deal => deal.Name).Apply();
                 this.CreateBinding(PriceLabel).To<Deal>(deal => deal.Price).Apply();
                 this.CreateBinding(OwnerLabel).To<Deal>(deal => deal.Owner).Apply();
-                this.CreateBinding(DateLabel).To<Deal>(deal => deal.Date).Apply();
+                this.CreateBinding(DateLabel).To<Deal>(deal => deal.Date).WithConversion("StringFormat", "MM/dd/yyyy").Apply();
                 this.CreateBinding(CityLabel).To<Deal>(deal => deal.City).Apply();
                 this.CreateBinding(GradeLabel).To<Deal>(deal => deal.Grade).Apply();
             });

@@ -27,21 +27,24 @@ namespace RicardoDealCommunity.ViewModels
             _navigationService = navigationService;
             SelectItemCommand = new MvxCommand<Deal>(HandleAction);
 
-            Deals = LocalData.GetDeals();
+            Deals = LocalData.Deals();
+            Name = "List";
+            Icon = "home";
         }
 
         public ListViewModel()
         {
             SelectItemCommand = new MvxCommand<Deal>(HandleAction);
-            Deals = LocalData.GetDeals();
+            Deals = LocalData.Deals();
             Name = "List";
-            Icon = "deals";
+            Icon = "home";
         }
 
         void HandleAction(Deal obj)
         {
             Item = obj;
-            _navigationService.Navigate<DetailsViewModel, Deal>(Item);
+            ShowViewModel<DetailsViewModel, Deal>(Item);
+            //_navigationService.Navigate<DetailsViewModel, Deal>(Item);
         }
     }
 }

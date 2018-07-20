@@ -16,5 +16,12 @@ namespace RicardoDealCommunity.Models
         public string Owner { get; set; }
         public int Grade { get; set; }
         public string Picture { get; set; }
+        public bool IsFavorite { get; set; }
+
+        public Deal()
+        {
+            Date = DateTime.Now.Date;
+        }
+            
     }
 }

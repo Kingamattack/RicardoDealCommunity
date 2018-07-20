@@ -18,9 +18,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
 {
     public partial class ListView : MvxViewController<ListViewModel>
     {
-        public ListView() : base(nameof(ListView), null)
-        {
-        }
+        public ListView() : base(nameof(ListView), null) {}
 
         public override void ViewDidLoad()
         {

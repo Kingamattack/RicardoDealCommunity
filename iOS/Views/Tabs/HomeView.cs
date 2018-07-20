@@ -3,15 +3,18 @@
 // Date: 20/7/2018
 
 using System.Collections.Generic;
+
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Views;
 using MvvmCross.iOS.Views.Presenters.Attributes;
+
 using RicardoDealCommunity.ViewModels;
+
 using UIKit;
 
 namespace RicardoDealCommunity.iOS.Views.Tabs
 {
-    [MvxRootPresentation(WrapInNavigationController = true)]
+    [MvxRootPresentation(WrapInNavigationController = false)]
     public partial class HomeView : MvxTabBarViewController<HomeViewModel>
     {
         private bool _constructed;
