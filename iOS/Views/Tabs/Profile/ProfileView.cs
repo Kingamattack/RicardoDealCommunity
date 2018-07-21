@@ -20,6 +20,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Profile
 
             var set = this.CreateBindingSet<ProfileView, ProfileViewModel>();
             set.Bind(UserLabel).To(ViewModel => ViewModel.Username);
+            set.Bind(ListSegmentedControl).For(sc => sc.SelectedSegment).To(ViewModel => ViewModel.Index);
             set.Apply();
 
             var source = new ListTableSource(FavoritesTableView);

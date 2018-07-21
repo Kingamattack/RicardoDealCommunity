@@ -20,6 +20,10 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Profile
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISegmentedControl ListSegmentedControl { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView UserImageView { get; set; }
 
         [Outlet]
@@ -31,6 +35,11 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Profile
             if (FavoritesTableView != null) {
                 FavoritesTableView.Dispose ();
                 FavoritesTableView = null;
+            }
+
+            if (ListSegmentedControl != null) {
+                ListSegmentedControl.Dispose ();
+                ListSegmentedControl = null;
             }
 
             if (UserImageView != null) {
