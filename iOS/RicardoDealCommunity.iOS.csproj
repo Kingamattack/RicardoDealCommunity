@@ -123,6 +123,9 @@
     <Folder Include="Views\Tabs\List\" />
     <Folder Include="Views\Tabs\Profile\" />
     <Folder Include="Views\Details\" />
+    <Folder Include="Views\Tabs\Search\" />
+    <Folder Include="Views\Tabs\Create\" />
+    <Folder Include="Views\Tabs\Create\Cells\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -130,6 +133,7 @@
     <InterfaceDefinition Include="Views\Tabs\Profile\ProfileView.xib" />
     <InterfaceDefinition Include="Views\Tabs\List\DealCell.xib" />
     <InterfaceDefinition Include="Views\Details\DetailsView.xib" />
+    <InterfaceDefinition Include="Views\Tabs\Create\CreateView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -165,6 +169,10 @@
     <Compile Include="Views\Tabs\ChildView.designer.cs">
       <DependentUpon>ChildView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tabs\Create\CreateView.cs" />
+    <Compile Include="Views\Tabs\Create\CreateView.designer.cs">
+      <DependentUpon>CreateView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icones\ic_profile\ic_profile.png" />
@@ -176,6 +184,12 @@
     <BundleResource Include="Resources\Icones\ic_deal\ic_deal.png" />
     <BundleResource Include="Resources\Icones\ic_deal\ic_deal%402x.png" />
     <BundleResource Include="Resources\Icones\ic_deal\ic_deal%403x.png" />
+    <BundleResource Include="Resources\Icones\ic_create\ic_create.png" />
+    <BundleResource Include="Resources\Icones\ic_create\ic_create%402x.png" />
+    <BundleResource Include="Resources\Icones\ic_create\ic_create%403x.png" />
+    <BundleResource Include="Resources\Icones\ic_search\ic_search.png" />
+    <BundleResource Include="Resources\Icones\ic_search\ic_search%402x.png" />
+    <BundleResource Include="Resources\Icones\ic_search\ic_search%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,10 +1,10 @@
 ﻿// File: LocalData.cs
 // Author: Kingamattack
 // Date: 18/7/2018
-using System;
 
 using System.Collections.Generic;
 using System.Linq;
+
 using RicardoDealCommunity.Models;
 
 namespace RicardoDealCommunity.Services
@@ -83,5 +83,12 @@ namespace RicardoDealCommunity.Services
 
             return favoritesDeals;
         }
+
+        public static string[] Cities()
+        {
+            return new string[]{ "Limoges", "Paris", "Bucharest", "Zoug", "Geneve", "Zurich" };
+        }
+
+        public static string GetUsername() => "Kingamattack";
     }
 }

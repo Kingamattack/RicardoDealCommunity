@@ -22,9 +22,11 @@ namespace RicardoDealCommunity.ViewModels
 
         public HomeViewModel()
         {
-            MyViewModels = new List<ChildViewModel>()
+            MyViewModels = new List<ChildViewModel>
             {
                 new ListViewModel(),
+                new CreateViewModel(),
+                //new SearchViewModel(),
                 new ProfileViewModel()
             };
         }

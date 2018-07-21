@@ -4,6 +4,8 @@
 
 using System;
 
+using RicardoDealCommunity.Services;
+
 namespace RicardoDealCommunity.Models
 {
     public class Deal
@@ -21,7 +23,9 @@ namespace RicardoDealCommunity.Models
         public Deal()
         {
             Date = DateTime.Now.Date;
-        }
-            
+            Grade = 0;
+            Owner = LocalData.GetUsername();
+            IsFavorite = false;
+        }                   
     }
 }

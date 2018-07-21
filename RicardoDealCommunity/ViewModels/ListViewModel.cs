@@ -29,7 +29,7 @@ namespace RicardoDealCommunity.ViewModels
 
             Deals = LocalData.Deals();
             Name = "List";
-            Icon = "home";
+            Icon = "deals";
         }
 
         public ListViewModel()
@@ -37,13 +37,13 @@ namespace RicardoDealCommunity.ViewModels
             SelectItemCommand = new MvxCommand<Deal>(HandleAction);
             Deals = LocalData.Deals();
             Name = "List";
-            Icon = "home";
+            Icon = "deals";
         }
 
         void HandleAction(Deal obj)
         {
             Item = obj;
-            ShowViewModel<DetailsViewModel, Deal>(Item);
+            //ShowViewModel<DetailsViewModel, Deal>(Item);
             //_navigationService.Navigate<DetailsViewModel, Deal>(Item);
         }
     }
