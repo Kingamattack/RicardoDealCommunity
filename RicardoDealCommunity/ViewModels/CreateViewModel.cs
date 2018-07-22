@@ -32,6 +32,7 @@ namespace RicardoDealCommunity.ViewModels
             Name = "Create";
             Icon = "create";
 
+            CreatedDeal = new Deal();
             Deals = LocalData.Cities();
         }
                     
@@ -43,14 +44,16 @@ namespace RicardoDealCommunity.ViewModels
             if (string.IsNullOrWhiteSpace(CreatedDeal.Name))
                 return;
 
-            if (CreatedDeal.Price <= 0.0)
+            if (CreatedDeal.Price < 0.0)
+                return;
+
+            if (string.IsNullOrWhiteSpace(CreatedDeal.Description))
                 return;
 
             if (string.IsNullOrWhiteSpace(CreatedDeal.City))
                 return;
 
-            if (string.IsNullOrWhiteSpace(CreatedDeal.Description))
-                return;
+            LocalData.AddDeal(CreatedDeal);
         }
 
         void ResetDeal()

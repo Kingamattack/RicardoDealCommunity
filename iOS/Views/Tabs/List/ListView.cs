@@ -37,6 +37,13 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
             ListTableView.RowHeight = 100f;
             ListTableView.ReloadData();
         }
+
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            ListTableView.ReloadData();
+        }
     }
 
     public class ListTableSource : MvxTableViewSource

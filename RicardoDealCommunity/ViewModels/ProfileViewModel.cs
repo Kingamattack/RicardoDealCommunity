@@ -4,8 +4,6 @@
 
 using System.Collections.Generic;
 
-using MvvmCross.Core.ViewModels;
-
 using RicardoDealCommunity.Models;
 using RicardoDealCommunity.Services;
 
@@ -13,7 +11,7 @@ namespace RicardoDealCommunity.ViewModels
 {
     public class ProfileViewModel : ChildViewModel
     {
-        public string Username { get; set; } = "Kingamattack";
+        public string Username { get; set; } = LocalData.username;
 
         List<Deal> myDeals = new List<Deal>();
         public List<Deal> MyDeals
@@ -24,11 +22,6 @@ namespace RicardoDealCommunity.ViewModels
                 myDeals = value; 
                 RaisePropertyChanged(() => MyDeals);
             }
-        }
-
-        public MvxCommand SwitchListCommand
-        {
-            get => new MvxCommand(SwitchList);
         }
 
         int index;

@@ -24,7 +24,7 @@ namespace RicardoDealCommunity.Models
         {
             Date = DateTime.Now.Date;
             Grade = 0;
-            Owner = LocalData.GetUsername();
+            Owner = LocalData.username;
             IsFavorite = false;
         }                   
     }

@@ -9,10 +9,10 @@
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
                 <outlet property="NameTextField" destination="1452" id="name-outlet-1452"/>
                 <outlet property="PriceTextField" destination="1455" id="name-outlet-1455"/>
-                <outlet property="CitiesPickerView" destination="1454" id="name-outlet-1454"/>
                 <outlet property="SaveButton" destination="213" id="name-outlet-213"/>
                 <outlet property="ClearButton" destination="214" id="name-outlet-214"/>
                 <outlet property="DescriptionTextField" destination="2796" id="name-outlet-2796"/>
+                <outlet property="CityTextField" destination="3608" id="name-outlet-3608"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -27,11 +27,11 @@
                         <constraint id="218" firstItem="208" firstAttribute="width" constant="150"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="213" translatesAutoresizingMaskIntoConstraints="NO">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="213" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                     <rect key="frame" x="170.5" y="580" width="34" height="30"/>
                     <state key="normal" title="Save"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="214" translatesAutoresizingMaskIntoConstraints="NO">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="214" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                     <rect key="frame" x="163.5" y="620" width="48" height="30"/>
                     <state key="normal" title="Cancel">
                         <color key="titleColor" colorSpace="calibratedRGB" red="1" green="0.027450980392156862" blue="0" alpha="1"/>
@@ -46,20 +46,20 @@
                         <constraint id="1459" firstItem="1452" firstAttribute="height" constant="50"/>
                     </constraints>
                 </textField>
-                <pickerView contentMode="scaleToFill" id="1454" translatesAutoresizingMaskIntoConstraints="NO">
-                    <rect key="frame" x="28" y="360" width="320" height="100"/>
-                    <constraints>
-                        <constraint id="1933" firstItem="1454" firstAttribute="height" constant="100"/>
-                    </constraints>
-                </pickerView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="1455" translatesAutoresizingMaskIntoConstraints="NO" clearButtonMode="whileEditing" placeholder="Type the price here" textAlignment="center">
-                    <rect key="frame" x="1" y="300" width="373" height="50"/>
+                    <rect key="frame" x="1" y="305" width="373" height="50"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="2796" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Type the description here" textAlignment="center">
-                    <rect key="frame" x="0.0" y="480" width="375" height="50"/>
+                    <rect key="frame" x="0.0" y="415" width="375" height="50"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="3608" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Type the city here" textAlignment="center">
+                    <rect key="frame" x="0.0" y="360" width="375" height="50"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -74,18 +74,19 @@
                 <constraint id="1460" firstItem="1455" firstAttribute="height" secondItem="1452" secondAttribute="height"/>
                 <constraint id="1461" firstItem="1455" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="1"/>
                 <constraint id="1462" firstItem="2" firstAttribute="trailing" secondItem="1455" secondAttribute="trailing" constant="1"/>
-                <constraint id="1463" firstItem="1455" firstAttribute="top" secondItem="1452" secondAttribute="bottom"/>
-                <constraint id="1930" firstItem="1454" firstAttribute="top" secondItem="1455" secondAttribute="bottom" constant="10"/>
-                <constraint id="1931" firstItem="1454" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="28"/>
-                <constraint id="1932" firstItem="2" firstAttribute="trailing" secondItem="1454" secondAttribute="trailing" constant="27"/>
+                <constraint id="1463" firstItem="1455" firstAttribute="top" secondItem="1452" secondAttribute="bottom" constant="5"/>
                 <constraint id="1937" firstItem="2" firstAttribute="centerX" secondItem="213" secondAttribute="centerX"/>
                 <constraint id="1939" firstItem="2" firstAttribute="centerX" secondItem="214" secondAttribute="centerX"/>
                 <constraint id="1940" firstItem="214" firstAttribute="top" secondItem="213" secondAttribute="bottom" constant="10"/>
                 <constraint id="2797" firstItem="213" firstAttribute="top" secondItem="2796" secondAttribute="bottom" constant="50"/>
                 <constraint id="2798" firstItem="2796" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
                 <constraint id="2799" firstItem="2" firstAttribute="trailing" secondItem="2796" secondAttribute="trailing"/>
-                <constraint id="2800" firstItem="2796" firstAttribute="top" secondItem="1454" secondAttribute="bottom" constant="20"/>
                 <constraint id="3165" firstItem="2796" firstAttribute="height" secondItem="1455" secondAttribute="height"/>
+                <constraint id="3610" firstItem="3608" firstAttribute="top" secondItem="1455" secondAttribute="bottom" constant="5"/>
+                <constraint id="3611" firstItem="2796" firstAttribute="top" secondItem="3608" secondAttribute="bottom" constant="5"/>
+                <constraint id="3613" firstItem="2" firstAttribute="trailing" secondItem="3608" secondAttribute="trailing"/>
+                <constraint id="3614" firstItem="3608" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
+                <constraint id="3615" firstItem="3608" firstAttribute="height" secondItem="1452" secondAttribute="height"/>
             </constraints>
         </view>
     </objects>

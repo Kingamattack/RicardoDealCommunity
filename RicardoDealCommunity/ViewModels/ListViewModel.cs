@@ -27,7 +27,7 @@ namespace RicardoDealCommunity.ViewModels
             _navigationService = navigationService;
             SelectItemCommand = new MvxCommand<Deal>(HandleAction);
 
-            Deals = LocalData.Deals();
+            Deals = LocalData.AllDeals();
             Name = "List";
             Icon = "deals";
         }
@@ -35,7 +35,7 @@ namespace RicardoDealCommunity.ViewModels
         public ListViewModel()
         {
             SelectItemCommand = new MvxCommand<Deal>(HandleAction);
-            Deals = LocalData.Deals();
+            Deals = LocalData.AllDeals();
             Name = "List";
             Icon = "deals";
         }

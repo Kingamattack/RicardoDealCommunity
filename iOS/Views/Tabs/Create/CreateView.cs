@@ -20,13 +20,8 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Create
             var set = this.CreateBindingSet<CreateView, CreateViewModel>();
             set.Bind(NameTextField).To(vm => vm.CreatedDeal.Name);
             set.Bind(PriceTextField).To(vm => vm.CreatedDeal.Price);
-            set.Bind(CitiesPickerView).For(p => p.DataSource).To(vm => vm.Deals);
+            set.Bind(CityTextField).To(vm => vm.CreatedDeal.City);
             set.Bind(DescriptionTextField).To(vm => vm.CreatedDeal.Description);
-
-            /*this.AddBindings(new Dictionary<object, string>
-            {
-                { source, "ItemsSource Deals" }
-            });*/
 
             set.Bind(SaveButton).To(vm => vm.SaveDealCommand);
             set.Bind(ClearButton).To(vm => vm.ResetDealCommand);

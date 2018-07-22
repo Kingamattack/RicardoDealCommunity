@@ -125,7 +125,6 @@
     <Folder Include="Views\Details\" />
     <Folder Include="Views\Tabs\Search\" />
     <Folder Include="Views\Tabs\Create\" />
-    <Folder Include="Views\Tabs\Create\Cells\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

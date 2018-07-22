@@ -3,8 +3,10 @@
 // Date: 12/7/2018
 
 using System.Collections.Generic;
+
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.iOS.Views;
+
 using RicardoDealCommunity.iOS.Views.Tabs.List;
 using RicardoDealCommunity.ViewModels;
 

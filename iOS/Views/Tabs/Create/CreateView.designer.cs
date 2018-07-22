@@ -16,7 +16,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Create
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIPickerView CitiesPickerView { get; set; }
+        UIKit.UITextField CityTextField { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -40,9 +40,9 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Create
 
         void ReleaseDesignerOutlets ()
         {
-            if (CitiesPickerView != null) {
-                CitiesPickerView.Dispose ();
-                CitiesPickerView = null;
+            if (CityTextField != null) {
+                CityTextField.Dispose ();
+                CityTextField = null;
             }
 
             if (ClearButton != null) {
