@@ -32,12 +32,16 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
             _imageHelper = new MvxImageViewLoader(() => ThumbnailImageView);
             this.DelayBind(() =>
             {
-                this.CreateBinding(NameLabel).To<Deal>(deal => deal.Name).Apply();
-                this.CreateBinding(PriceLabel).To<Deal>(deal => deal.Price).Apply();
-                this.CreateBinding(OwnerLabel).To<Deal>(deal => deal.Owner).Apply();
-                this.CreateBinding(DateLabel).To<Deal>(deal => deal.Date).WithConversion("StringFormat", "MM/dd/yyyy").Apply();
-                this.CreateBinding(CityLabel).To<Deal>(deal => deal.City).Apply();
-                this.CreateBinding(GradeLabel).To<Deal>(deal => deal.Grade).Apply();
+                var set = this.CreateBindingSet<DealCell, Deal>();
+
+                set.Bind(NameLabel).To(deal => deal.Name);
+                set.Bind(PriceLabel).SourceDescribed("Price + ' €'");
+                set.Bind(OwnerLabel).To(deal => deal.Owner);
+                set.Bind(DateLabel).SourceDescribed("Date.Month + '/' + Date.Day + '/' + Date.Year");
+                set.Bind(CityLabel).To(deal => deal.City);
+                set.Bind(GradeLabel).SourceDescribed("Grade + '°'");
+
+                set.Apply();
             });
         }
     }

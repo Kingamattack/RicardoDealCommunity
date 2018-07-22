@@ -32,7 +32,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Profile
             });
 
             FavoritesTableView.Source = source;
-            FavoritesTableView.RowHeight = 100f;
+            FavoritesTableView.RowHeight = 110f;
             FavoritesTableView.ReloadData();
         }
     }
