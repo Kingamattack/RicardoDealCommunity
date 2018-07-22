@@ -20,7 +20,15 @@ namespace RicardoDealCommunity.iOS.Views.Details
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel DateLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextView DescriptionTextView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel GradeLabel { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -45,9 +53,19 @@ namespace RicardoDealCommunity.iOS.Views.Details
                 CityLabel = null;
             }
 
+            if (DateLabel != null) {
+                DateLabel.Dispose ();
+                DateLabel = null;
+            }
+
             if (DescriptionTextView != null) {
                 DescriptionTextView.Dispose ();
                 DescriptionTextView = null;
+            }
+
+            if (GradeLabel != null) {
+                GradeLabel.Dispose ();
+                GradeLabel = null;
             }
 
             if (NameLabel != null) {

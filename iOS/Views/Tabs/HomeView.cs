@@ -17,7 +17,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs
     [MvxRootPresentation(WrapInNavigationController = false)]
     public partial class HomeView : MvxTabBarViewController<HomeViewModel>
     {
-        private bool _constructed;
+        bool _constructed;
 
         public HomeView()
         {

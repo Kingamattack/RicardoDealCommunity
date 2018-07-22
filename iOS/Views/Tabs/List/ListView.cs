@@ -31,10 +31,10 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
             });
 
             this.CreateBinding(source).For(s => s.SelectedItem).To<ListViewModel>(vm => vm.Item).Apply();
-            this.CreateBinding(source).For(s => s.SelectionChangedCommand).To<ListViewModel>(vm => vm.SelectItemCommand).Apply();
+            this.CreateBinding(source).For(s => s.SelectionChangedCommand).To<ListViewModel>(vm => vm.GoToChildCommand).Apply();
 
             ListTableView.Source = source;
-            ListTableView.RowHeight = 100f;
+            ListTableView.RowHeight = 110f;
             ListTableView.ReloadData();
         }
 

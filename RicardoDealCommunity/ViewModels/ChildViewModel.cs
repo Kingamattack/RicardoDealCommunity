@@ -37,6 +37,6 @@ namespace RicardoDealCommunity.ViewModels
             }
         }
 
-        public ICommand GoToChildCommand => new MvxCommand(() => ShowViewModel<MvxViewModel>());
+        public ICommand GoToChildCommand => new MvxCommand(() => ShowViewModel<DetailsViewModel>());
     }
 }

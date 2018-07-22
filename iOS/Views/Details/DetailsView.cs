@@ -22,9 +22,12 @@ namespace RicardoDealCommunity.iOS.Views.Details
 
             var set = this.CreateBindingSet<DetailsView, DetailsViewModel>();
             set.Bind(NameLabel).To(vm => vm.SelectedDeal.Name);
-            set.Bind(PriceLabel).To(vm => vm.SelectedDeal.Price);
+            set.Bind(PriceLabel).SourceDescribed("SelectedDeal.Price + ' €'");
             set.Bind(CityLabel).To(vm => vm.SelectedDeal.City);
+            set.Bind(GradeLabel).SourceDescribed("SelectedDeal.Grade + '°'");
             set.Bind(OwnerLabel).To(vm => vm.SelectedDeal.Owner);
+            set.Bind(DateLabel).SourceDescribed("SelectedDeal.Date.Month + '/' + SelectedDeal.Date.Day + '/' + SelectedDeal.Date.Year");
+            set.Bind(DescriptionTextView).To(vm => vm.SelectedDeal.Description);
 
             set.Apply();
         }
