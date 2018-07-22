@@ -27,6 +27,6 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.Create
             set.Bind(ClearButton).To(vm => vm.ResetDealCommand);
 
             set.Apply();
-        }
+        } 
     }
 }

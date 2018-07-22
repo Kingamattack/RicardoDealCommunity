@@ -26,7 +26,6 @@ namespace RicardoDealCommunity.ViewModels
         {
             get => new MvxCommand(ResetDeal);
         }
-
         public CreateViewModel()
         {
             Name = "Create";
@@ -54,11 +53,15 @@ namespace RicardoDealCommunity.ViewModels
                 return;
 
             LocalData.AddDeal(CreatedDeal);
+            ShowViewModel<ListViewModel>();
         }
 
         void ResetDeal()
         {
-            CreatedDeal = new Deal();
+            CreatedDeal.Name = string.Empty;
+            CreatedDeal.Price = 0;
+            CreatedDeal.Description = string.Empty;
+            CreatedDeal.City = string.Empty;
         }
     }
 }
