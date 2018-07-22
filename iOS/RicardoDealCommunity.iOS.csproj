@@ -164,10 +164,6 @@
     <Compile Include="Views\Tabs\HomeView.designer.cs">
       <DependentUpon>HomeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Tabs\ChildView.cs" />
-    <Compile Include="Views\Tabs\ChildView.designer.cs">
-      <DependentUpon>ChildView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\Tabs\Create\CreateView.cs" />
     <Compile Include="Views\Tabs\Create\CreateView.designer.cs">
       <DependentUpon>CreateView.cs</DependentUpon>
