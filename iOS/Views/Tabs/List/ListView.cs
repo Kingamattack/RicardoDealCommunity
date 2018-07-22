@@ -20,18 +20,26 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
     {
         public ListView() : base(nameof(ListView), null) {}
 
+        ListTableSource source;
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
 
-            var source = new ListTableSource(ListTableView);
+            source = new ListTableSource(ListTableView);
             this.AddBindings(new Dictionary<object, string>
             {
-                { source, "ItemsSource Deals" }
+                { source, "ItemsSource Deals" },
+                { DealSearchBar, "Text SeekingText"}
             });
 
             this.CreateBinding(source).For(s => s.SelectedItem).To<ListViewModel>(vm => vm.Item).Apply();
             this.CreateBinding(source).For(s => s.SelectionChangedCommand).To<ListViewModel>(vm => vm.GoToChildCommand).Apply();
+
+            DealSearchBar.TextChanged += (sender, e) =>  
+            {
+                ViewModel.UpdateDeals();
+            }; 
 
             ListTableView.Source = source;
             ListTableView.RowHeight = 110f;
@@ -41,7 +49,6 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
-
             ListTableView.ReloadData();
         }
     }

@@ -16,7 +16,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs
         {
             base.ViewDidLoad();
 
-            EdgesForExtendedLayout = UIRectEdge.None;
+            /*EdgesForExtendedLayout = UIRectEdge.None;
             //View.BackgroundColor = UIColor.FromRGB(new Random().Next(0, 255), new Random().Next(0, 255), new Random().Next(0, 255));
             View.BackgroundColor = UIColor.DarkGray;
 
@@ -26,7 +26,7 @@ namespace RicardoDealCommunity.iOS.Views.Tabs
 
             var set = this.CreateBindingSet<ChildView, ChildViewModel>();
             set.Bind(button).To(vm => vm.GoToChildCommand);
-            set.Apply();
+            set.Apply();*/
         }
     }
 }

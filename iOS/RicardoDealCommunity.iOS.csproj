@@ -123,7 +123,6 @@
     <Folder Include="Views\Tabs\List\" />
     <Folder Include="Views\Tabs\Profile\" />
     <Folder Include="Views\Details\" />
-    <Folder Include="Views\Tabs\Search\" />
     <Folder Include="Views\Tabs\Create\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
@@ -134,7 +133,6 @@
     <InterfaceDefinition Include="Views\Tabs\List\DealCell.xib" />
     <InterfaceDefinition Include="Views\Details\DetailsView.xib" />
     <InterfaceDefinition Include="Views\Tabs\Create\CreateView.xib" />
-    <InterfaceDefinition Include="Views\Tabs\Search\SearchView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -173,10 +171,6 @@
     <Compile Include="Views\Tabs\Create\CreateView.cs" />
     <Compile Include="Views\Tabs\Create\CreateView.designer.cs">
       <DependentUpon>CreateView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Tabs\Search\SearchView.cs" />
-    <Compile Include="Views\Tabs\Search\SearchView.designer.cs">
-      <DependentUpon>SearchView.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CustomMvxIosViewPresenter.cs" />
   </ItemGroup>

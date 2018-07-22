@@ -16,10 +16,19 @@ namespace RicardoDealCommunity.iOS.Views.Tabs.List
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UISearchBar DealSearchBar { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView ListTableView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (DealSearchBar != null) {
+                DealSearchBar.Dispose ();
+                DealSearchBar = null;
+            }
+
             if (ListTableView != null) {
                 ListTableView.Dispose ();
                 ListTableView = null;

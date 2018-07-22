@@ -24,7 +24,16 @@ namespace RicardoDealCommunity.Services
                 Price = 100.0, 
                 Owner = "Kingamattack",
                 Description = "Awesome deal description"
-            }, 
+            },
+            new Deal
+            {
+                Name = "Console XBOX",
+                Grade = 309,
+                City = "London",
+                Price = 180.0,
+                Owner = "Lolo",
+                Description = "Awesome deal description"
+            },
             new Deal 
             { 
                 Name = "Television", 

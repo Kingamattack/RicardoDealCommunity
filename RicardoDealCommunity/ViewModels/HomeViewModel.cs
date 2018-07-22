@@ -27,7 +27,6 @@ namespace RicardoDealCommunity.ViewModels
             {
                 new ListViewModel(),
                 new CreateViewModel(),
-                new SearchViewModel(),
                 new ProfileViewModel()
             };
         }
