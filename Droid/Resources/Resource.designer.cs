@@ -87,7 +87,10 @@ namespace RicardoDealCommunity.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int splash = 2130837504;
+			public const int ic_create = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int splash = 2130837505;
 			
 			static Drawable()
 			{
@@ -153,7 +156,19 @@ namespace RicardoDealCommunity.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Icon = 2130903040;
+			public const int ic_create = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int ic_deal = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int ic_home = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int ic_profile = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Icon = 2130903044;
 			
 			static Mipmap()
 			{

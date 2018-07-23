@@ -38,7 +38,6 @@ namespace RicardoDealCommunity.Droid.Views
             TabHost.AddTab(spec);
 
             spec = TabHost.NewTabSpec("Profile");
-            //spec.SetIndicator("3", Resources.GetDrawable(Resource.Drawable.Tab_Tweets));
             spec.SetIndicator("Profile");
             spec.SetContent(this.CreateIntentFor(HomeViewModel.MyViewModels[2] as ProfileViewModel));
 
