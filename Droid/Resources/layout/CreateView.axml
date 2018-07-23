@@ -5,27 +5,27 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <ImageView
-        android:src="@drawable/ic_create"
-        android:layout_width="100dp"
+        android:src="@drawable/ic_deal"
+        android:layout_width="match_parent"
         android:layout_height="100dp" />
     <EditText
         android:hint="Type the name here"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         local:MvxBind="Text CreatedDeal.Name" />
     <EditText
         android:hint="Type the price here"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         local:MvxBind="Text CreatedDeal.Price" />
     <EditText
         android:hint="Type the city here"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         local:MvxBind="Text CreatedDeal.City" />
     <EditText
         android:hint="Type the description here"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         local:MvxBind="Text CreatedDeal.Description" />
     <Button
