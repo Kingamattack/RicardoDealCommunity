@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,9 +65,9 @@
     <Reference Include="Mono.Android.Export" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RicardoDealCommunity\RicardoDealCommunity.csproj">
-      <Project>{E90B163C-6809-4546-BDD8-92C2494EE869}</Project>
-      <Name>RicardoDealCommunity</Name>
+    <ProjectReference Include="..\RicardoDealCommunity.ViewModels\RicardoDealCommunity.ViewModels.csproj">
+      <Project>{13C5F318-4281-41D0-B967-55243472601E}</Project>
+      <Name>RicardoDealCommunity.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

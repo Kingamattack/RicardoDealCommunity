@@ -52,26 +52,26 @@ namespace RicardoDealCommunity.Droid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010000
+			// aapt resource value: 0x7F010000
 			public const int MvxBind = 2130771968;
 			
-			// aapt resource value: 0x7f010004
-			public const int MvxDropDownItemTemplate = 2130771972;
+			// aapt resource value: 0x7F010001
+			public const int MvxDropDownItemTemplate = 2130771969;
 			
-			// aapt resource value: 0x7f010005
-			public const int MvxGroupItemTemplate = 2130771973;
+			// aapt resource value: 0x7F010002
+			public const int MvxGroupItemTemplate = 2130771970;
 			
-			// aapt resource value: 0x7f010003
+			// aapt resource value: 0x7F010003
 			public const int MvxItemTemplate = 2130771971;
 			
-			// aapt resource value: 0x7f010001
-			public const int MvxLang = 2130771969;
+			// aapt resource value: 0x7F010004
+			public const int MvxLang = 2130771972;
 			
-			// aapt resource value: 0x7f010006
-			public const int MvxSource = 2130771974;
+			// aapt resource value: 0x7F010005
+			public const int MvxSource = 2130771973;
 			
-			// aapt resource value: 0x7f010002
-			public const int MvxTemplate = 2130771970;
+			// aapt resource value: 0x7F010006
+			public const int MvxTemplate = 2130771974;
 			
 			static Attribute()
 			{
@@ -86,13 +86,13 @@ namespace RicardoDealCommunity.Droid
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7f020000
+			// aapt resource value: 0x7F020000
 			public const int ic_create = 2130837504;
 			
-			// aapt resource value: 0x7f020001
+			// aapt resource value: 0x7F020001
 			public const int ic_deal = 2130837505;
 			
-			// aapt resource value: 0x7f020002
+			// aapt resource value: 0x7F020002
 			public const int splash = 2130837506;
 			
 			static Drawable()
@@ -108,11 +108,11 @@ namespace RicardoDealCommunity.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int MvvmCrossTagId = 2131034112;
+			// aapt resource value: 0x7F030000
+			public const int MvvmCrossTagId = 2130903040;
 			
-			// aapt resource value: 0x7f050001
-			public const int MvxBindingTagUnique = 2131034113;
+			// aapt resource value: 0x7F030001
+			public const int MvxBindingTagUnique = 2130903041;
 			
 			static Id()
 			{
@@ -127,22 +127,22 @@ namespace RicardoDealCommunity.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f040000
+			// aapt resource value: 0x7F040000
 			public const int CreateView = 2130968576;
 			
-			// aapt resource value: 0x7f040001
+			// aapt resource value: 0x7F040001
 			public const int deal_template = 2130968577;
 			
-			// aapt resource value: 0x7f040002
+			// aapt resource value: 0x7F040002
 			public const int HomeView = 2130968578;
 			
-			// aapt resource value: 0x7f040003
+			// aapt resource value: 0x7F040003
 			public const int ListView = 2130968579;
 			
-			// aapt resource value: 0x7f040004
+			// aapt resource value: 0x7F040004
 			public const int ProfileView = 2130968580;
 			
-			// aapt resource value: 0x7f040005
+			// aapt resource value: 0x7F040005
 			public const int SplashScreen = 2130968581;
 			
 			static Layout()
@@ -158,20 +158,20 @@ namespace RicardoDealCommunity.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int ic_create = 2130903040;
+			// aapt resource value: 0x7F050004
+			public const int Icon = 2131034116;
 			
-			// aapt resource value: 0x7f030001
-			public const int ic_deal = 2130903041;
+			// aapt resource value: 0x7F050000
+			public const int ic_create = 2131034112;
 			
-			// aapt resource value: 0x7f030002
-			public const int ic_home = 2130903042;
+			// aapt resource value: 0x7F050001
+			public const int ic_deal = 2131034113;
 			
-			// aapt resource value: 0x7f030003
-			public const int ic_profile = 2130903043;
+			// aapt resource value: 0x7F050002
+			public const int ic_home = 2131034114;
 			
-			// aapt resource value: 0x7f030004
-			public const int Icon = 2130903044;
+			// aapt resource value: 0x7F050003
+			public const int ic_profile = 2131034115;
 			
 			static Mipmap()
 			{
@@ -186,11 +186,11 @@ namespace RicardoDealCommunity.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f070001
-			public const int app_name = 2131165185;
+			// aapt resource value: 0x7F060000
+			public const int app_name = 2131099648;
 			
-			// aapt resource value: 0x7f070000
-			public const int hello = 2131165184;
+			// aapt resource value: 0x7F060001
+			public const int hello = 2131099649;
 			
 			static String()
 			{
@@ -205,8 +205,8 @@ namespace RicardoDealCommunity.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int Theme_Splash = 2131099648;
+			// aapt resource value: 0x7F070000
+			public const int Theme_Splash = 2131165184;
 			
 			static Style()
 			{
@@ -221,9 +221,10 @@ namespace RicardoDealCommunity.Droid
 		public partial class Styleable
 		{
 			
+			// aapt resource value: { 0x7F010000,0x7F010004 }
 			public static int[] MvxBinding = new int[] {
 					2130771968,
-					2130771969};
+					2130771972};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -231,33 +232,37 @@ namespace RicardoDealCommunity.Droid
 			// aapt resource value: 1
 			public const int MvxBinding_MvxLang = 1;
 			
+			// aapt resource value: { 0x7F010006 }
 			public static int[] MvxControl = new int[] {
-					2130771970};
+					2130771974};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
+			// aapt resource value: { 0x7F010002 }
 			public static int[] MvxExpandableListView = new int[] {
-					2130771973};
+					2130771970};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
+			// aapt resource value: { 0x7F010005 }
 			public static int[] MvxImageView = new int[] {
-					2130771974};
+					2130771973};
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
+			// aapt resource value: { 0x7F010001,0x7F010003 }
 			public static int[] MvxListView = new int[] {
-					2130771971,
-					2130771972};
-			
-			// aapt resource value: 1
-			public const int MvxListView_MvxDropDownItemTemplate = 1;
+					2130771969,
+					2130771971};
 			
 			// aapt resource value: 0
-			public const int MvxListView_MvxItemTemplate = 0;
+			public const int MvxListView_MvxDropDownItemTemplate = 0;
+			
+			// aapt resource value: 1
+			public const int MvxListView_MvxItemTemplate = 1;
 			
 			static Styleable()
 			{

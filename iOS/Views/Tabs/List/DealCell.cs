@@ -2,16 +2,16 @@
 // Author: Kingamattack
 // Date: 12/7/2018
 
-using System;
+using Foundation;
 
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.iOS.Views;
 
-using Foundation;
+using RicardoDealCommunity.Models;
+
+using System;
 
 using UIKit;
-
-using RicardoDealCommunity.Models;
 
 namespace RicardoDealCommunity.iOS.Views.Tabs.List
 {

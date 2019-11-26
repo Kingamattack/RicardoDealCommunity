@@ -1,7 +1,9 @@
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
-using MvvmCross.Platform.Platform;
+
+using RicardoDealCommunity.ViewModels;
+
 using UIKit;
 
 namespace RicardoDealCommunity.iOS

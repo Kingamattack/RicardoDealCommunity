@@ -1,7 +1,10 @@
 using Android.Content;
-using MvvmCross.Droid.Platform;
+
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Droid.Platform;
 using MvvmCross.Platform.Platform;
+
+using RicardoDealCommunity.ViewModels;
 
 namespace RicardoDealCommunity.Droid
 {

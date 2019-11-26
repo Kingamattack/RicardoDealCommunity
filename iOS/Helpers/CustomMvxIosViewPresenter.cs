@@ -1,11 +1,12 @@
 ﻿// File: CustomMvxIosViewPresenter.cs
 // Author: Kingamattack
 // Date: 22/7/2018
-using System;
+
 using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Views;
 using MvvmCross.iOS.Views.Presenters;
 using MvvmCross.iOS.Views.Presenters.Attributes;
+
 using UIKit;
 
 namespace RicardoDealCommunity.iOS.Helpers
